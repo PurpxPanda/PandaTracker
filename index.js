@@ -1,5 +1,4 @@
 const inquirer = require('inquirer');
-require('console.table');
 const mysql = require('mysql2');
 const logo = require('asciiart-logo');
 require('dotenv').config();

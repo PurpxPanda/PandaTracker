@@ -1,30 +1,29 @@
 {
-    "name": "PandaTracker",
+    "name": "pandatracker",
     "description": "a command line application to manage a company's employee database, using Node, Inquirer, and MySQL.",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js",
-      "seed": "node seed.sql",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node index.js",
+        "seed": "node seed.sql",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/PurpxPanda/PandaTracker.git"
+        "type": "git",
+        "url": "git+https://github.com/PurpxPanda/PandaTracker.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/PurpxPanda/PandaTracker/issues"
+        "url": "https://github.com/PurpxPanda/PandaTracker/issues"
     },
     "homepage": "https://github.com/PurpxPanda/PandaTracker#readme",
     "dependencies": {
-      "console.table": "^0.10.0",
-      "dotenv": "^16.0.3",
-      "inquirer": "^8.2.4",
-      "mysql2": "3.2.0",
-      "asciiart-logo": "^0.2.7"
+        "asciiart-logo": "^0.2.7",
+        "console.table": "^0.10.0",
+        "dotenv": "^16.0.3",
+        "inquirer": "^8.2.4",
+        "mysql2": "3.2.0"
     }
-  }
-  
+}
