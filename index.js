@@ -4,15 +4,15 @@ const logo = require('asciiart-logo');
 require('dotenv').config();
 require('console.table');
 // connect to sql database
-const db = mysql.createConnection({
+const db = mysql.createConnection(
+    {
     host: 'localhost',
     user: 'root',
     password: process.env.PASSWORD,
     database: 'company_db'
-});
-
-    console.log('Connected to the company_db database.')
-
+    },
+    console.log(`Connected to the company_db database.`)
+);
 
 startApp()
 
@@ -45,8 +45,7 @@ function menu() {
             }
         ])
         .then(res => {
-           
-            switch (res.options) {
+                switch (res.options) {
                 case 'View all departments':
                     viewDepartments()
                     break;
