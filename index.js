@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 require('console.table');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const logo = require('asciiart-logo');
-
+require('dotenv').config();
 // connect to sql database
 const db = mysql.createConnection({
     host: 'localhost',
@@ -11,14 +11,8 @@ const db = mysql.createConnection({
     database: 'company_db'
 });
 
-db.connect((err) => {
-    if (err) {
-        console.error('Error connecting to the database: ' + err.stack);
-        return;
-    }
+    console.log('Connected to the company_db database.')
 
-    console.log('Connected to the company_db database.');
-});
 
 startApp()
 
