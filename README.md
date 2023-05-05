@@ -6,7 +6,7 @@ This is a command-line application that allows users to track and manage personn
 
 
 ## Installation
-npm i
+npm i can be used to install all required packages for the app
 
 ## Usage
 Once connected to the database, add the schema and seed to populate all tables.simply open the terminal and run the command "npm start". you will be prompted with many choices for the database. When you are finished, use the "Quit" option on the main menu to exit the app. 
