@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const logo = require('asciiart-logo');
 require('dotenv').config();
+require('console.table');
 // connect to sql database
 const db = mysql.createConnection({
     host: 'localhost',
@@ -21,7 +22,6 @@ function startApp() {
             name: 'Employee Database',
             logoColor: 'bold-magenta',
         }).render())
-
     menu()
 }
 // generate the start menu for user

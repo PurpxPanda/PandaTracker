@@ -1,5 +1,5 @@
 {
-    "name": "pandatracker",
+    "name": "PandaTracker",
     "description": "a command line application to manage a company's employee database, using Node, Inquirer, and MySQL.",
     "version": "1.0.0",
     "main": "index.js",
