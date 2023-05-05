@@ -6,14 +6,23 @@ require('console.table');
 // connect to sql database
 const db = mysql.createConnection(
     {
+    client: 'mysql2',
     host: 'localhost',
     user: 'root',
-    password: process.env.PASSWORD,
+    password: process.env.DB_PASSWORD,
     database: 'company_db'
-    },
-    console.log(`Connected to the company_db database.`)
-);
+    });
 
+    db.connect((err) => {
+        if (err) {
+            console.error('Error connecting to the database: ' + err.stack);
+            return;
+        }
+        console.log('Connected to the company_db database.')
+    
+        console.log('Connected to the company_db database.');
+    });
+     
 startApp()
 
 function startApp() {
